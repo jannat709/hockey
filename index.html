@@ -36,97 +36,250 @@
   <body class="manrope">
     <header>
       <!-- navbar -->
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+      <section>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li><a>Home</a></li>
+                <li>
+                  <a>About</a>
+                </li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+            <a class="btn btn-ghost text-xl">Hockey’s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Hockey’s</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div>
-            <button class="btn btn-error">Get Ticket</button>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div>
+              <button class="btn btn-error">Get Ticket</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
     <main>
       <!--############# Banner ###################-->
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+      <section>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
+        <div
+          class="sm:w-full sm:ml-0 sm:mt-0 rounded-r-xl rounded-l-xl lg:ml-96 lg:w-auto lg:-mt-40 lg:mr-56 md:w-full md:ml-0 md:mt-0 relative items-center drop-shadow-lg bg-black p-5"
+        >
+          <div>
+            <h1 class="text-3xl">Meet all the heroes from the field</h1>
+            <p class="mt-3">
+              I’ve come up with a very subjective list of the top 10 hockey
+              players. <br />
+              Don’t agree with my picks? Well, you get a five-minute major for
+              fighting.
+            </p>
           </div>
         </div>
-      </div>
-      <div>
-        <h1>Meet all the heroes from the field</h1>
-        <p>
-          I’ve come up with a very subjective list of the top 10 hockey players.
-          Don’t agree with my picks? Well, you get a five-minute major for
-          fighting.
-        </p>
-      </div>
+      </section>
+      <!--############# Professional Hockeys Club #################### -->
+      <section class="text-center mt-20">
+        <div class="w-full">
+          <h3 class="text-5xl font-extrabold">Professional Hockeys Club</h3>
+          <p class="mt-3">
+            I’ve come up with a very subjective list of the top 10 hockey
+            players.
+            <br />
+            Don’t agree with my picks? Well, you get a five-minute major for
+            fighting.
+          </p>
+        </div>
+        <div class="gap-5 mt-10 p-10 grid lg:grid-cols-4">
+          <div>
+            <div
+              class="radial-progress text-error"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <div class="pt-8">
+              <h3 class="text-3xl">Prayer Facility</h3>
+              <p class="pt-3">
+                Recreational leagues and children's leagues often play shorter
+                games, <br />
+                generally with three shorter periods of play.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-accent"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <div class="pt-8">
+              <h3 class="text-3xl">Prayer Facility</h3>
+              <p class="pt-3">
+                Recreational leagues and children's leagues often play shorter
+                games, <br />
+                generally with three shorter periods of play.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-warning"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <div class="pt-8">
+              <h3 class="text-3xl">Prayer Facility</h3>
+              <p class="pt-3">
+                Recreational leagues and children's leagues often play shorter
+                games, <br />
+                generally with three shorter periods of play.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-info"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <div class="pt-8">
+              <h3 class="text-3xl">Prayer Facility</h3>
+              <p class="pt-3">
+                Recreational leagues and children's leagues often play shorter
+                games, <br />
+                generally with three shorter periods of play.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-20">
+        <div class="w-full">
+          <h3 class="text-5xl font-extrabold">Program Sections</h3>
+          <p class="mt-3">
+            I’ve come up with a very subjective list of the top 10 hockey
+            players.
+            <br />
+            Don’t agree with my picks? Well, you get a five-minute major for
+            fighting.
+          </p>
+        </div>
+        <div class="gap-5 mt-10 p-4 grid lg:grid-cols-2">
+          <div class="card lg:w-full image-full sm:w-full md:w-full">
+            <figure>
+              <img class="w-full" src="Images/2.png" />
+            </figure>
+            <div class="card-body mt-52">
+              <h2 class="card-title text-white">Junior Program</h2>
+              <p class="text-white text-start">
+                Junior hockey demands dedication, discipline, and hard work both
+                on and off the ice. It's a chance to refine your skills, learn
+                from experienced coaches and teammates, and showcase your
+                abilities to scouts and recruiters. It's also a time to balance
+                hockey with other aspects of your life.
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-error text-white">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card lg:w-full image-full sm:w-full md:w-full">
+            <figure>
+              <img class="w-full" src="Images/3.png" />
+            </figure>
+            <div class="card-body mt-56">
+              <h2 class="card-title text-white">Teenager Program</h2>
+              <p class="text-white text-start">
+                Being a teenage hockey player can be an exciting and challenging
+                experience! Whether you're playing in a local league, on a
+                school team, or pursuing higher levels of competition, there's
+                always something new to learn and improve upon.
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-error text-white">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full image-full p-4">
+          <figure>
+            <img class="w-full" src="Images/4.png" />
+          </figure>
+          <div class="card-body mt-80">
+            <h2 class="card-title text-white">Professional Program</h2>
+            <p class="text-white text-start">
+              To reach the professional level, you'll likely start by playing in
+              youth leagues, progressing <br />
+              through junior hockey, and possibly playing at the collegiate
+              level if you choose that path. <br />
+              Along the way, you'll need to constantly work on improving your
+              skills, fitness, and mental <br />
+              toughness.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-error text-white">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
